@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:contas_a_pagar_app/screen/AddConta.dart';
 class Principal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,26 +8,28 @@ class Principal extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: MyHomePage(title: 'Contas A Pagar'),
+      home: PrincipalPage(title: 'Contas A Pagar'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class PrincipalPage extends StatefulWidget {
+  PrincipalPage({Key key, this.title}) : super(key: key);
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _PrincipalPageState createState() => _PrincipalPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _PrincipalPageState extends State<PrincipalPage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+    Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AddConta()),
+            );
+
   }
 
   @override
