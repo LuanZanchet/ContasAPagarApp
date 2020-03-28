@@ -45,10 +45,6 @@ class _PrincipalPageState extends State<PrincipalPage> {
             Text(
               'Contas a pagar:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
           ],
         ),
       ),
