@@ -5,18 +5,55 @@ class AddConta extends StatelessWidget  {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Adicionar Rota"),
+        title: Text("Adicionar conta a pagar"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Contas a pagar:',
+             Center(
+              child: Container(
+                margin: EdgeInsets.only(top: 60.0),
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.account_circle),
+                          labelText: 'Descrição',
+                          hintText: "Descrição",
+                        ),
+                        keyboardType: TextInputType.emailAddress,
+                        style: new TextStyle(
+                          fontFamily: "Poppins",
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
-            Text(
-              '100',
-              style: Theme.of(context).textTheme.display1,
+            Container(
+              margin: EdgeInsets.only(top: 20.0),
+              child: Center(
+                child: RaisedButton(
+                  padding: EdgeInsets.all(10.0),  
+                  child: Text(
+                    'Criar', 
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  color: Colors.blue,
+                  elevation: 4.0,
+                  splashColor: Colors.blueGrey,
+                  onPressed: () {
+                    () => {};
+                  },
+                ),
+              ),
             ),
           ],
         ),

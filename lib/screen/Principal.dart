@@ -22,9 +22,7 @@ class PrincipalPage extends StatefulWidget {
 }
 
 class _PrincipalPageState extends State<PrincipalPage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
+  void _addConta() {
     Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => AddConta()),
@@ -49,8 +47,8 @@ class _PrincipalPageState extends State<PrincipalPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: _addConta,
+        tooltip: 'Adicionar nova conta',
         child: Icon(Icons.add),
       ), 
     );
