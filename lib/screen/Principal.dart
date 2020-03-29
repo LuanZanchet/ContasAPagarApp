@@ -40,9 +40,7 @@ class _PrincipalPageState extends State<PrincipalPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Contas a pagar:',
-            ),
+            
           ],
         ),
       ),

@@ -5,7 +5,7 @@ class AddConta extends StatelessWidget  {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Adicionar conta a pagar"),
+        title: Text("Adicionar contas a pagar"),
       ),
       body: Center(
         child: Column(
